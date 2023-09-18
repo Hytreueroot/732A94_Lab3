@@ -25,15 +25,14 @@
 #'
 #' @export
 dijkstra <- function(graph, init_node){
-  stopifnot(is.numeric(init_node) &
-              is.data.frame(graph) &
-              init_node %in% unique(graph$v1) &
-              all(colnames(graph) == c("v1", "v2", "w")) &
-              length(colnames(graph)) == 3 &
-              length(graph$v1) == length(graph$v2) &
-              length(graph$v2) == length(graph$w) &
-              is.atomic(init_node)
-  )
+  stopifnot(is.numeric(init_node),
+            is.data.frame(graph),
+            length(colnames(graph)) == 3,
+            init_node %in% unique(graph$v1),
+            all(colnames(graph) == c("v1", "v2", "w")),
+            length(graph[[1]]) == length(graph[[2]]),
+            length(graph$v2) == length(graph$w)
+              )
   dist <- c()
   prev <- c()
   Q <- c()
