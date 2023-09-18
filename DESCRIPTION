@@ -5,7 +5,7 @@ Version: 1.0
 Author: SILA KILICOGLU (silki753@student.liu.se) and SAMI FURKAN YILDIRIM (samyi572@student.liu.se)
 Maintainer: SILA KILICOGLU <silakilicoglu@gmail.com>
 Description: Advance R Programming Lab 3 Assingment.
-License: GPL-2
+License: GPL-2 | file LICENSE
 Encoding: UTF-8
 Suggests : testthat
 LazyData: true
