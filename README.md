@@ -19,3 +19,7 @@ Install the package using the following code in R.
 ```ruby
 devtools::install_github("Hytreueroot/732A94_Lab3")
 ```
+
+## Contributors
+SILA KILICOGLU        (silki753)          silki573@student.liu.se
+SAMI FURKAN YILDIRIM  (samyi572)          samyi572@student.liu.se
